@@ -7,6 +7,7 @@
   <!--<script type="text/javascript" src="lib/dat.gui.min.js"></script>-->
   <script type="text/javascript" src="lib/Tween.js"></script>
   <script type="text/javascript" src="lib/traer.js"></script>
+  <script type="text/javascript" src="lib/jquery-1.6.1.min.js"></script>
   
   <script type="text/javascript" src="lib/soundmanager2-nodebug-jsmin.js"></script>
   
@@ -25,20 +26,13 @@
 <body>
 
   <canvas id="canvas" resize></canvas>
+  
+  <div id="loading" style="background-color: rgba(0,0,0,0.87);z-index: 999;padding: 10px 10px 5px;background: rgb(0, 0, 0);left: 0;top: 0;right: 0;bottom: 0;position: fixed;text-align: center;box-shadow: 2px 2px 10px;border-radius: 1px;"><font style="top:40%; left: 40%; color:white" size="87"><i>now loading...</i></font></div>
   <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-353220-16']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
+    $(window).load(function(){
+         $('#loading').fadeOut(333);
+        });
   </script>
-
   <!-- <div id="compat">
     It's way better on a desktop.
   </div> -->
@@ -53,12 +47,15 @@
   </div>
 
   <div id="enquiries">
-    <a target="_top" href="mailto:jsn811@gmail.com">DRUG DEALER</a>
-    <a id="embed-button" href="mailto:jsn811@gmail.com">BRAIN POWER</a>
+    <a target="_top" href="mailto: jsn811@gmail.com">DRUG DEALER</a>
+    <a id="embed-button" href="#">NOTICE</a>
   </div>
 
   <div id="embed">
-    <textarea id="embed-text">DRUG EVERYDAY!!!!!</textarea>
+    <textarea id="embed-text">
+      DRUG EVERYDAY!!!!!
+      REFERENCE: https://github.com/georgealways/staggeringbeauty
+    </textarea>
   </div>
 
 </body>
